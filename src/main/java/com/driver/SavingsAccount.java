@@ -9,7 +9,6 @@ public class SavingsAccount extends BankAccount{
         super(name, balance, 0);
         this.maxWithdrawalLimit = maxWithdrawalLimit;
         this.rate = rate;
-
     }
     public void withdraw(double amount) throws Exception {
         // Might throw the following errors:
@@ -17,9 +16,9 @@ public class SavingsAccount extends BankAccount{
         // 2. "Insufficient Balance" : If the amount exceeds balance
 
         if(amount <= maxWithdrawalLimit){
-            super(withdraw(amount));
+            super.withdraw(amount);
         }
-        else(amount > maxWithdrawalLimit){
+        else{
             throw new Exception("Maximum Withdraw Limit Exceed");
         }
 //        if(amount > getBalance()){
