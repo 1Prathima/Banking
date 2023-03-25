@@ -104,4 +104,7 @@ public boolean isNumberValid(String tradeLicenseId){
         return max_ch;
     }
 
+    public String getTradeLicenseId() {
+        return tradeLicenseId;
+    }
 }
